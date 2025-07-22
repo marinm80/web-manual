@@ -1,0 +1,633 @@
+/* =============================================================================
+   BEM METHODOLOGY (Block, Element, Modifier)
+   
+   Structure:
+   - .block
+   - .block__element
+   - .block--modifier
+   - .block__element--modifier
+   
+   For future projects, always use this methodology:
+   1. Blocks: Independent and reusable components
+   2. Elements: Parts of a block that have no meaning outside of it
+   3. Modifiers: Variants of blocks or elements
+   ========================================================================== */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* =============================================================================
+   BLOCK: page
+   ========================================================================== */
+.page {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ELEMENTS: page */
+.page__title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.page__section-title {
+    text-align: center;
+    font-size: 1.8em;
+    color: #1976D2;
+    margin: 30px 0 20px 0;
+    font-weight: bold;
+}
+
+/* =============================================================================
+   BLOCK: table
+   ========================================================================== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    border: 3px solid #2196F3;
+    border-radius: 5px;
+}
+
+/* ELEMENTS: table */
+.table__row {
+    transition: all 0.2s ease;
+}
+
+.table__row:not(.table__row--header):nth-child(even) {
+    background-color: #E3F2FD;
+}
+
+.table__row:not(.table__row--header):nth-child(odd) {
+    background-color: #E8F5E8;
+}
+
+.table__row:not(.table__row--header):hover {
+    background-color: #BBDEFB !important;
+}
+
+/* ELEMENTS: table__cell */
+.table__cell {
+    padding: 12px 15px;
+    border-right: 1px solid #1976D2;
+    border-bottom: 1px solid #1976D2;
+    vertical-align: top;
+}
+
+.table__cell:last-child {
+    border-right: none;
+}
+
+/* MODIFIERS: table__cell */
+.table__cell--header {
+    background-color: #64B5F6;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table__cell--code {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #333;
+    background-color: #C8E6C9;
+}
+
+/* =============================================================================
+   ROW VARIANTS - TAGS
+   ========================================================================== */
+.table__row--tags.table__row--variant-1 {
+    font-family: 'Georgia', serif;
+    color: #1565C0;
+}
+
+.table__row--tags.table__row--variant-1:hover {
+    background-color: #E1F5FE !important;
+    color: #0277BD;
+}
+
+.table__row--tags.table__row--variant-2 {
+    font-family: 'Verdana', sans-serif;
+    color: #2E7D32;
+}
+
+.table__row--tags.table__row--variant-2:hover {
+    background-color: #E8F5E8 !important;
+    color: #2E7D32;
+}
+
+.table__row--tags.table__row--variant-3 {
+    font-family: 'Times New Roman', serif;
+    color: #4B0082;
+}
+
+.table__row--tags.table__row--variant-3:hover {
+    background-color: #E6E6FA !important;
+    color: #8A2BE2;
+}
+
+.table__row--tags.table__row--variant-4 {
+    font-family: 'Courier New', monospace;
+    color: #8B4513;
+}
+
+.table__row--tags.table__row--variant-4:hover {
+    background-color: #FFF8DC !important;
+    color: #D2691E;
+}
+
+.table__row--tags.table__row--variant-5 {
+    font-family: 'Arial Black', sans-serif;
+    color: #DC143C;
+}
+
+.table__row--tags.table__row--variant-5:hover {
+    background-color: #FFB6C1 !important;
+    color: #FF1493;
+}
+
+.table__row--tags.table__row--variant-6 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #2F4F4F;
+}
+
+.table__row--tags.table__row--variant-6:hover {
+    background-color: #F0FFFF !important;
+    color: #708090;
+}
+
+.table__row--tags.table__row--variant-7 {
+    font-family: 'Comic Sans MS', cursive;
+    color: #FF8C00;
+}
+
+.table__row--tags.table__row--variant-7:hover {
+    background-color: #FFEFD5 !important;
+    color: #FF4500;
+}
+
+.table__row--tags.table__row--variant-8 {
+    font-family: 'Impact', sans-serif;
+    color: #800080;
+}
+
+.table__row--tags.table__row--variant-8:hover {
+    background-color: #DDA0DD !important;
+    color: #9932CC;
+}
+
+.table__row--tags.table__row--variant-9 {
+    font-family: 'Palatino', serif;
+    color: #008B8B;
+}
+
+.table__row--tags.table__row--variant-9:hover {
+    background-color: #E0FFFF !important;
+    color: #00CED1;
+}
+
+.table__row--tags.table__row--variant-10 {
+    font-family: 'Lucida Console', monospace;
+    color: #B22222;
+}
+
+.table__row--tags.table__row--variant-10:hover {
+    background-color: #FFE4E1 !important;
+    color: #CD5C5C;
+}
+
+/* =============================================================================
+   ROW VARIANTS - ATTRIBUTES
+   ========================================================================== */
+.table__row--attributes.table__row--variant-1 {
+    font-family: 'Helvetica', sans-serif;
+    color: #191970;
+}
+
+.table__row--attributes.table__row--variant-1:hover {
+    background-color: #F0F8FF !important;
+    color: #4169E1;
+}
+
+.table__row--attributes.table__row--variant-2 {
+    font-family: 'Garamond', serif;
+    color: #556B2F;
+}
+
+.table__row--attributes.table__row--variant-2:hover {
+    background-color: #F5FFFA !important;
+    color: #9ACD32;
+}
+
+.table__row--attributes.table__row--variant-3 {
+    font-family: 'Monaco', monospace;
+    color: #8B008B;
+}
+
+.table__row--attributes.table__row--variant-3:hover {
+    background-color: #F8F8FF !important;
+    color: #DA70D6;
+}
+
+.table__row--attributes.table__row--variant-4 {
+    font-family: 'Tahoma', sans-serif;
+    color: #B8860B;
+}
+
+.table__row--attributes.table__row--variant-4:hover {
+    background-color: #FFFACD !important;
+    color: #FFD700;
+}
+
+.table__row--attributes.table__row--variant-5 {
+    font-family: 'Calibri', sans-serif;
+    color: #A0522D;
+}
+
+.table__row--attributes.table__row--variant-5:hover {
+    background-color: #FDF5E6 !important;
+    color: #D2B48C;
+}
+
+.table__row--attributes.table__row--variant-6 {
+    font-family: 'Century Gothic', sans-serif;
+    color: #483D8B;
+}
+
+.table__row--attributes.table__row--variant-6:hover {
+    background-color: #E6E6FA !important;
+    color: #9370DB;
+}
+
+.table__row--attributes.table__row--variant-7 {
+    font-family: 'Franklin Gothic', sans-serif;
+    color: #CD853F;
+}
+
+.table__row--attributes.table__row--variant-7:hover {
+    background-color: #FAEBD7 !important;
+    color: #F4A460;
+}
+
+.table__row--attributes.table__row--variant-8 {
+    font-family: 'Bookman', serif;
+    color: #2E8B57;
+}
+
+.table__row--attributes.table__row--variant-8:hover {
+    background-color: #F0FFF0 !important;
+    color: #3CB371;
+}
+
+/* =============================================================================
+   ROW VARIANTS - SEMANTIC
+   ========================================================================== */
+.table__row--semantic.table__row--variant-1 {
+    font-family: 'Optima', sans-serif;
+    color: #FF6347;
+}
+
+.table__row--semantic.table__row--variant-1:hover {
+    background-color: #FFE4E1 !important;
+    color: #FF4500;
+}
+
+.table__row--semantic.table__row--variant-2 {
+    font-family: 'Candara', sans-serif;
+    color: #4682B4;
+}
+
+.table__row--semantic.table__row--variant-2:hover {
+    background-color: #F0F8FF !important;
+    color: #87CEEB;
+}
+
+.table__row--semantic.table__row--variant-3 {
+    font-family: 'Consolas', monospace;
+    color: #9932CC;
+}
+
+.table__row--semantic.table__row--variant-3:hover {
+    background-color: #F5F0FF !important;
+    color: #BA55D3;
+}
+
+.table__row--semantic.table__row--variant-4 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #8FBC8F;
+}
+
+.table__row--semantic.table__row--variant-4:hover {
+    background-color: #F0FFF0 !important;
+    color: #90EE90;
+}
+
+.table__row--semantic.table__row--variant-5 {
+    font-family: 'Cambria', serif;
+    color: #D2691E;
+}
+
+.table__row--semantic.table__row--variant-5:hover {
+    background-color: #FFEFD5 !important;
+    color: #FF7F50;
+}
+
+.table__row--semantic.table__row--variant-6 {
+    font-family: 'Arial Narrow', sans-serif;
+    color: #20B2AA;
+}
+
+.table__row--semantic.table__row--variant-6:hover {
+    background-color: #F0FFFF !important;
+    color: #48D1CC;
+}
+
+.table__row--semantic.table__row--variant-7 {
+    font-family: 'Rockwell', serif;
+    color: #CD5C5C;
+}
+
+.table__row--semantic.table__row--variant-7:hover {
+    background-color: #FFE4E1 !important;
+    color: #F08080;
+}
+
+.table__row--semantic.table__row--variant-8 {
+    font-family: 'Futura', sans-serif;
+    color: #6A5ACD;
+}
+
+.table__row--semantic.table__row--variant-8:hover {
+    background-color: #E6E6FA !important;
+    color: #7B68EE;
+}
+
+.table__row--semantic.table__row--variant-9 {
+    font-family: 'Didot', serif;
+    color: #DAA520;
+}
+
+.table__row--semantic.table__row--variant-9:hover {
+    background-color: #FFFACD !important;
+    color: #F0E68C;
+}
+
+.table__row--semantic.table__row--variant-10 {
+    font-family: 'Geneva', sans-serif;
+    color: #DC143C;
+}
+
+.table__row--semantic.table__row--variant-10:hover {
+    background-color: #FFB6C1 !important;
+    color: #FF69B4;
+}
+
+.table__row--semantic.table__row--variant-11 {
+    font-family: 'Menlo', monospace;
+    color: #2F4F4F;
+}
+
+.table__row--semantic.table__row--variant-11:hover {
+    background-color: #F0FFFF !important;
+    color: #708090;
+}
+
+.table__row--semantic.table__row--variant-12 {
+    font-family: 'Avenir', sans-serif;
+    color: #8B4513;
+}
+
+.table__row--semantic.table__row--variant-12:hover {
+    background-color: #FFF8DC !important;
+    color: #D2691E;
+}
+
+.table__row--semantic.table__row--variant-13 {
+    font-family: 'Baskerville', serif;
+    color: #4B0082;
+}
+
+.table__row--semantic.table__row--variant-13:hover {
+    background-color: #E6E6FA !important;
+    color: #9400D3;
+}
+
+/* =============================================================================
+   ROW VARIANTS - CSS PROPERTIES
+   ========================================================================== */
+.table__row--css.table__row--variant-1 {
+    font-family: 'SF Pro Display', sans-serif;
+    color: #0066CC;
+}
+
+.table__row--css.table__row--variant-1:hover {
+    background-color: #E6F3FF !important;
+    color: #0080FF;
+}
+
+.table__row--css.table__row--variant-2 {
+    font-family: 'Inter', sans-serif;
+    color: #009688;
+}
+
+.table__row--css.table__row--variant-2:hover {
+    background-color: #E0F2F1 !important;
+    color: #00BCD4;
+}
+
+.table__row--css.table__row--variant-3 {
+    font-family: 'Roboto', sans-serif;
+    color: #FF5722;
+}
+
+.table__row--css.table__row--variant-3:hover {
+    background-color: #FBE9E7 !important;
+    color: #FF7043;
+}
+
+.table__row--css.table__row--variant-4 {
+    font-family: 'Source Code Pro', monospace;
+    color: #673AB7;
+}
+
+.table__row--css.table__row--variant-4:hover {
+    background-color: #EDE7F6 !important;
+    color: #9C27B0;
+}
+
+.table__row--css.table__row--variant-5 {
+    font-family: 'Poppins', sans-serif;
+    color: #4CAF50;
+}
+
+.table__row--css.table__row--variant-5:hover {
+    background-color: #E8F5E8 !important;
+    color: #66BB6A;
+}
+
+.table__row--css.table__row--variant-6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #E91E63;
+}
+
+.table__row--css.table__row--variant-6:hover {
+    background-color: #FCE4EC !important;
+    color: #F06292;
+}
+
+.table__row--css.table__row--variant-7 {
+    font-family: 'Open Sans', sans-serif;
+    color: #795548;
+}
+
+.table__row--css.table__row--variant-7:hover {
+    background-color: #EFEBE9 !important;
+    color: #A1887F;
+}
+
+.table__row--css.table__row--variant-8 {
+    font-family: 'Lato', sans-serif;
+    color: #607D8B;
+}
+
+.table__row--css.table__row--variant-8:hover {
+    background-color: #ECEFF1 !important;
+    color: #78909C;
+}
+
+.table__row--css.table__row--variant-9 {
+    font-family: 'Nunito', sans-serif;
+    color: #FF9800;
+}
+
+.table__row--css.table__row--variant-9:hover {
+    background-color: #FFF3E0 !important;
+    color: #FFB74D;
+}
+
+.table__row--css.table__row--variant-10 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #3F51B5;
+}
+
+.table__row--css.table__row--variant-10:hover {
+    background-color: #E8EAF6 !important;
+    color: #5C6BC0;
+}
+
+.table__row--css.table__row--variant-11 {
+    font-family: 'Raleway', sans-serif;
+    color: #E53935;
+}
+
+.table__row--css.table__row--variant-11:hover {
+    background-color: #FFEBEE !important;
+    color: #EF5350;
+}
+
+.table__row--css.table__row--variant-12 {
+    font-family: 'Merriweather', serif;
+    color: #00695C;
+}
+
+.table__row--css.table__row--variant-12:hover {
+    background-color: #E0F2F1 !important;
+    color: #26A69A;
+}
+
+.table__row--css.table__row--variant-13 {
+    font-family: 'Playfair Display', serif;
+    color: #5E35B1;
+}
+
+.table__row--css.table__row--variant-13:hover {
+    background-color: #EDE7F6 !important;
+    color: #7E57C2;
+}
+
+.table__row--css.table__row--variant-14 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #D32F2F;
+}
+
+.table__row--css.table__row--variant-14:hover {
+    background-color: #FFEBEE !important;
+    color: #F44336;
+}
+
+.table__row--css.table__row--variant-15 {
+    font-family: 'Fira Sans', sans-serif;
+    color: #1976D2;
+}
+
+.table__row--css.table__row--variant-15:hover {
+    background-color: #E3F2FD !important;
+    color: #42A5F5;
+}
+
+/* =============================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 768px) {
+    .page {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .page__title {
+        font-size: 2em;
+    }
+    
+    .page__section-title {
+        font-size: 1.5em;
+    }
+    
+    .table {
+        font-size: 0.9em;
+    }
+    
+    .table__cell {
+        padding: 8px 10px;
+    }
+}
+
+/* =============================================================================
+   GUIDE FOR FUTURE PROJECTS WITH BEM:
+   
+   1. ALWAYS use double underscore (__) for elements
+   2. ALWAYS use double dash (--) for modifiers
+   3. Keep names descriptive and semantic
+   4. Avoid nesting selectors more than 2 levels
+   5. Each block should be independent and reusable
+   6. Elements cannot exist outside of their block
+   7. Modifiers alter appearance or behavior
+   
+   Correct examples:
+   - .header
+   - .header__logo
+   - .header__nav
+   - .header--dark
+   - .header__nav--mobile
+   
+   Incorrect examples:
+   - .header-logo (use __ not -)
+   - .header_nav (use __ not _)
+   - .header.dark (use -- not .)
+   ========================================================================== */

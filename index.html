@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Reference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <h1 class="page__title">HTML Table Reference</h1>
+        
+        <h2 class="page__section-title">Table Tags</h2>
+        <table class="table table--tags">
+            <thead class="table__head">
+                <tr class="table__row table__row--header">
+                    <th class="table__cell table__cell--header">Tag</th>
+                    <th class="table__cell table__cell--header">Name</th>
+                    <th class="table__cell table__cell--header">Description</th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr class="table__row table__row--tags table__row--variant-1">
+                    <td class="table__cell table__cell--code">&lt;table&gt;</td>
+                    <td class="table__cell">Table</td>
+                    <td class="table__cell">The wrapper element for all HTML tables</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-2">
+                    <td class="table__cell table__cell--code">&lt;thead&gt;</td>
+                    <td class="table__cell">Table Head</td>
+                    <td class="table__cell">The set of rows defining the column headers in a table</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-3">
+                    <td class="table__cell table__cell--code">&lt;tbody&gt;</td>
+                    <td class="table__cell">Table Body</td>
+                    <td class="table__cell">The set of rows containing actual table data</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-4">
+                    <td class="table__cell table__cell--code">&lt;tr&gt;</td>
+                    <td class="table__cell">Table Row</td>
+                    <td class="table__cell">The table row container</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-5">
+                    <td class="table__cell table__cell--code">&lt;td&gt;</td>
+                    <td class="table__cell">Table Data</td>
+                    <td class="table__cell">The table data cell container</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-6">
+                    <td class="table__cell table__cell--code">&lt;th&gt;</td>
+                    <td class="table__cell">Table Header</td>
+                    <td class="table__cell">The table header cell container</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-7">
+                    <td class="table__cell table__cell--code">&lt;tfoot&gt;</td>
+                    <td class="table__cell">Table Foot</td>
+                    <td class="table__cell">The set of rows defining the footer in a table</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-8">
+                    <td class="table__cell table__cell--code">&lt;caption&gt;</td>
+                    <td class="table__cell">Table Caption</td>
+                    <td class="table__cell">Provides a title or description for the table</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-9">
+                    <td class="table__cell table__cell--code">&lt;colgroup&gt;</td>
+                    <td class="table__cell">Column Group</td>
+                    <td class="table__cell">Groups one or more columns for formatting</td>
+                </tr>
+                <tr class="table__row table__row--tags table__row--variant-10">
+                    <td class="table__cell table__cell--code">&lt;col&gt;</td>
+                    <td class="table__cell">Column</td>
+                    <td class="table__cell">Defines column properties for each column within a colgroup</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="page__section-title">Table Attributes</h2>
+        <table class="table table--attributes">
+            <thead class="table__head">
+                <tr class="table__row table__row--header">
+                    <th class="table__cell table__cell--header">Attribute</th>
+                    <th class="table__cell table__cell--header">Name</th>
+                    <th class="table__cell table__cell--header">Description</th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr class="table__row table__row--attributes table__row--variant-1">
+                    <td class="table__cell table__cell--code">colspan</td>
+                    <td class="table__cell">Column Span</td>
+                    <td class="table__cell">Defines how many columns a td element should span</td>
+                </tr>
+                <tr class="table__row table__row--attributes table__row--variant-2">
+                    <td class="table__cell table__cell--code">rowspan</td>
+                    <td class="table__cell">Row Span</td>
+                    <td class="table__cell">Defines how many rows a td element should span</td>
+                </tr>
+                <tr class="table__row table__row--attributes table__row--variant-3">
+                    <td class="table__cell table__cell--code">scope</td>
+                    <td class="table__cell">Header Scope</td>
+                    <td class="table__cell">Specifies whether a header cell is a header for a column, row, or group</td>
+                </tr>
+                <tr class="table__row table__row--attributes table__row--variant-4">
+                    <td class="table__cell table__cell--code">headers</td>
+                    <td class="table__cell">Header IDs</td>
+                    <td class="table__cell">Lists header cells that provide information for the current cell</td>
+                </tr>
+                <tr class="table__row table__row--attributes table__row--variant-5">
+                    <td class="table__cell table__cell--code">abbr</td>
+                    <td class="table__cell">Abbreviation</td>
+                    <td class="table__cell">Provides an abbreviated version of the content in a header cell</td>
+                </tr>
+                <tr class="table__row table__row--attributes table__row--variant-6">
+                    <td class="table__cell table__cell--code">align</td>
+                    <td class="table__cell">Alignment</td>
+                    <td class="table__cell">Specifies the horizontal alignment of content (deprecated in HTML5)</td>
+                </tr>
+                <tr class="table__row table__row--attributes table__row--variant-7">
+                    <td class="table__cell table__cell--code">valign</td>
+                    <td class="table__cell">Vertical Alignment</td>
+                    <td class="table__cell">Specifies the vertical alignment of content (deprecated in HTML5)</td>
+                </tr>
+                <tr class="table__row table__row--attributes table__row--variant-8">
+                    <td class="table__cell table__cell--code">width</td>
+                    <td class="table__cell">Width</td>
+                    <td class="table__cell">Specifies the width of a table or cell (deprecated in HTML5)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="page__section-title">HTML Semantic Tags</h2>
+        <table class="table table--semantic">
+            <thead class="table__head">
+                <tr class="table__row table__row--header">
+                    <th class="table__cell table__cell--header">Tag</th>
+                    <th class="table__cell table__cell--header">Name</th>
+                    <th class="table__cell table__cell--header">Description</th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr class="table__row table__row--semantic table__row--variant-1">
+                    <td class="table__cell table__cell--code">&lt;header&gt;</td>
+                    <td class="table__cell">Header</td>
+                    <td class="table__cell">Represents introductory content or navigational aids</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-2">
+                    <td class="table__cell table__cell--code">&lt;nav&gt;</td>
+                    <td class="table__cell">Navigation</td>
+                    <td class="table__cell">Defines a set of navigation links</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-3">
+                    <td class="table__cell table__cell--code">&lt;main&gt;</td>
+                    <td class="table__cell">Main Content</td>
+                    <td class="table__cell">Represents the main content of the document</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-4">
+                    <td class="table__cell table__cell--code">&lt;article&gt;</td>
+                    <td class="table__cell">Article</td>
+                    <td class="table__cell">Represents a standalone piece of content</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-5">
+                    <td class="table__cell table__cell--code">&lt;section&gt;</td>
+                    <td class="table__cell">Section</td>
+                    <td class="table__cell">Represents a thematic grouping of content</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-6">
+                    <td class="table__cell table__cell--code">&lt;aside&gt;</td>
+                    <td class="table__cell">Aside</td>
+                    <td class="table__cell">Represents content aside from the main content</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-7">
+                    <td class="table__cell table__cell--code">&lt;footer&gt;</td>
+                    <td class="table__cell">Footer</td>
+                    <td class="table__cell">Represents footer information for its section</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-8">
+                    <td class="table__cell table__cell--code">&lt;figure&gt;</td>
+                    <td class="table__cell">Figure</td>
+                    <td class="table__cell">Represents self-contained content like images or diagrams</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-9">
+                    <td class="table__cell table__cell--code">&lt;figcaption&gt;</td>
+                    <td class="table__cell">Figure Caption</td>
+                    <td class="table__cell">Provides a caption for a figure element</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-10">
+                    <td class="table__cell table__cell--code">&lt;time&gt;</td>
+                    <td class="table__cell">Time</td>
+                    <td class="table__cell">Represents a specific period in time or date</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-11">
+                    <td class="table__cell table__cell--code">&lt;mark&gt;</td>
+                    <td class="table__cell">Mark</td>
+                    <td class="table__cell">Represents highlighted or marked text</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-12">
+                    <td class="table__cell table__cell--code">&lt;details&gt;</td>
+                    <td class="table__cell">Details</td>
+                    <td class="table__cell">Creates a disclosure widget for additional information</td>
+                </tr>
+                <tr class="table__row table__row--semantic table__row--variant-13">
+                    <td class="table__cell table__cell--code">&lt;summary&gt;</td>
+                    <td class="table__cell">Summary</td>
+                    <td class="table__cell">Provides a summary or caption for a details element</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="page__section-title">CSS Properties, Flexbox & Grid</h2>
+        <table class="table table--css">
+            <thead class="table__head">
+                <tr class="table__row table__row--header">
+                    <th class="table__cell table__cell--header">Property</th>
+                    <th class="table__cell table__cell--header">Category</th>
+                    <th class="table__cell table__cell--header">Description</th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr class="table__row table__row--css table__row--variant-1">
+                    <td class="table__cell table__cell--code">display: flex</td>
+                    <td class="table__cell">Flexbox</td>
+                    <td class="table__cell">Creates a flexible layout container</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-2">
+                    <td class="table__cell table__cell--code">justify-content</td>
+                    <td class="table__cell">Flexbox</td>
+                    <td class="table__cell">Aligns flex items horizontally (main axis)</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-3">
+                    <td class="table__cell table__cell--code">align-items</td>
+                    <td class="table__cell">Flexbox</td>
+                    <td class="table__cell">Aligns flex items vertically (cross axis)</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-4">
+                    <td class="table__cell table__cell--code">flex-direction</td>
+                    <td class="table__cell">Flexbox</td>
+                    <td class="table__cell">Defines the direction of flex items (row, column)</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-5">
+                    <td class="table__cell table__cell--code">flex-wrap</td>
+                    <td class="table__cell">Flexbox</td>
+                    <td class="table__cell">Controls whether flex items wrap to new lines</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-6">
+                    <td class="table__cell table__cell--code">display: grid</td>
+                    <td class="table__cell">Grid</td>
+                    <td class="table__cell">Creates a two-dimensional grid layout</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-7">
+                    <td class="table__cell table__cell--code">grid-template-columns</td>
+                    <td class="table__cell">Grid</td>
+                    <td class="table__cell">Defines the columns of the grid</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-8">
+                    <td class="table__cell table__cell--code">grid-template-rows</td>
+                    <td class="table__cell">Grid</td>
+                    <td class="table__cell">Defines the rows of the grid</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-9">
+                    <td class="table__cell table__cell--code">grid-gap</td>
+                    <td class="table__cell">Grid</td>
+                    <td class="table__cell">Sets the gap between grid items</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-10">
+                    <td class="table__cell table__cell--code">grid-area</td>
+                    <td class="table__cell">Grid</td>
+                    <td class="table__cell">Specifies a grid item's size and location</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-11">
+                    <td class="table__cell table__cell--code">position</td>
+                    <td class="table__cell">CSS Layout</td>
+                    <td class="table__cell">Specifies the positioning method (static, relative, absolute, fixed)</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-12">
+                    <td class="table__cell table__cell--code">box-sizing</td>
+                    <td class="table__cell">CSS Layout</td>
+                    <td class="table__cell">Defines how the total width and height is calculated</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-13">
+                    <td class="table__cell table__cell--code">z-index</td>
+                    <td class="table__cell">CSS Layout</td>
+                    <td class="table__cell">Controls the stacking order of positioned elements</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-14">
+                    <td class="table__cell table__cell--code">transform</td>
+                    <td class="table__cell">CSS Effects</td>
+                    <td class="table__cell">Applies 2D or 3D transformations to elements</td>
+                </tr>
+                <tr class="table__row table__row--css table__row--variant-15">
+                    <td class="table__cell table__cell--code">transition</td>
+                    <td class="table__cell">CSS Effects</td>
+                    <td class="table__cell">Creates smooth transitions between property changes</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
